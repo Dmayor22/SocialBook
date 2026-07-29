@@ -13,7 +13,7 @@ body {
 header {
   background-color: #1876f2;
   display: flex;
-  padding: 10px 30px;
+  padding: 10px 60px;
   align-items: center;
   justify-content: space-between;
   position: sticky;
@@ -66,7 +66,7 @@ header {
   background: #41bb51;
   position: absolute;
   border-radius: 50%;
-  right: 30px;
+  right: 60px;
   top: 14px;
   border: 1px solid #fff;
 }
@@ -96,31 +96,158 @@ header {
 
 /* main */
 .container {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   height: 100%;
-  padding: 10px 30px;
+  padding: 10px 60px;
 }
 
+/* LEFT SIDEBAR */
 .container .left-sidebar {
-  border: 2px solid red;
   height: 100vh;
-  background: #cbdffa;
   flex-basis: 25%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
 }
+
+.container .left-sidebar .group ul {
+  list-style: none;
+}
+
+.container .left-sidebar .group ul .group_links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.container .left-sidebar .group ul .group_links img {
+  width: 40px;
+  object-fit: contain;
+}
+
+.container .left-sidebar .group a {
+  text-decoration: none;
+  color: #1876f2;
+  font-weight: 700;
+}
+
+.container .left-sidebar .top {
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #626262;
+}
+
+.container .left-sidebar .shortcuts {
+  padding-top: 20px;
+}
+
+.container .left-sidebar .group .group_links a {
+  color: #626262;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.container .left-sidebar .shortcuts h3 {
+  color: #626262;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* RIGHT SIDEBAR */
 .container .right-sidebar {
-  border: 2px solid red;
   height: 100vh;
-  background: #cbdffa;
+  background: #fff;
   flex-basis: 25%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
+  padding: 15px;
 }
+
+.activities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.activities h3 {
+  font-weight: 700;
+  color: #626262;
+}
+
+.activities a {
+  text-decoration: none;
+  color: #1876f2;
+  font-weight: 900;
+}
+
+.notification_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.notification_list .calendars {
+  display: flex;
+  border: 2px solid red;
+  gap: 15px;
+  align-items: center;
+}
+
+.notification_list .calendars .date {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 25%;
+}
+
+.notification_list .calendars .notification_tasks h3 {
+  color: #626262;
+  font-weight: 900;
+}
+
+.notification_list .calendars .notification_tasks p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #626262;
+  margin: 5px 0;
+}
+
+.notification_list .calendars .notification_tasks p img {
+  width: 10px;
+}
+
+.notification_list .calendars .notification_tasks a {
+  text-decoration: none;
+  color: #1876f2;
+  font-weight: 600;
+}
+
+.notification_list .calendars .date .date_number {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.notification_list .calendars .date .month_number {
+  background: #1876f2;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
 .container .main-content {
   border: 2px solid red;
   height: 400px;
