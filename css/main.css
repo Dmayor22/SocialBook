@@ -9,7 +9,6 @@ body {
 }
 
 /* header */
-
 header {
   background-color: #1876f2;
   display: flex;
@@ -52,7 +51,7 @@ header {
   width: 30%;
 }
 
-.user img {
+.user #user_img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -66,9 +65,8 @@ header {
   background: #41bb51;
   position: absolute;
   border-radius: 50%;
-  right: 60px;
-  top: 14px;
   border: 1px solid #fff;
+  transform: translate(31px, -40px);
 }
 
 .search-box {
@@ -165,6 +163,8 @@ header {
   top: 70px;
   align-self: flex-start;
   padding: 15px;
+  border-radius: 6px;
+  color: #626262;
 }
 
 .activities {
@@ -177,6 +177,7 @@ header {
 .activities h3 {
   font-weight: 700;
   color: #626262;
+  font-size: 20px;
 }
 
 .activities a {
@@ -202,6 +203,7 @@ header {
   flex-direction: column;
   border-radius: 12px;
   flex-basis: 25%;
+  overflow: hidden;
 }
 
 .notification_list .calendars .date .date_number {
@@ -257,6 +259,7 @@ header {
 
 .right-sidebar .advert_img {
   width: 100%;
+  border-radius: 6px;
 }
 
 .conversation {
@@ -277,18 +280,40 @@ header {
 .conversation ul .conversation_list a {
   text-decoration: none;
   color: #626262;
+  font-weight: 600;
 }
 
 .conversation ul .conversation_list img {
   border-radius: 50%;
+  position: relative;
   width: 40px;
 }
+
+.conversation ul .conversation_list .member_status {
+  height: 9px;
+  width: 9px;
+  background: #41bb51;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(32px, 9px);
+  border: 1px solid #fff;
+}
+
+
+
 /* MAIN CONTENT */
 .container .main-content {
-  border: 2px solid red;
   height: 400px;
   flex-basis: 47%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
+}
+
+.status_bar {
+  display: flex;
+}
+
+.status_bar .bar_list img {
+  width: 100%;
 }
