@@ -299,8 +299,6 @@ header {
   border: 1px solid #fff;
 }
 
-
-
 /* MAIN CONTENT */
 .container .main-content {
   height: 400px;
@@ -310,10 +308,33 @@ header {
   align-self: flex-start;
 }
 
-.status_bar {
+.main-content .status_bar {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .status_bar .bar_list img {
   width: 100%;
+  border-radius: 10px;
+}
+
+.main-content .status_bar .status_upload {
+  position: relative;
+}
+
+.main-content .bar_list #upload {
+  position: absolute;
+  width: 40px;
+  bottom: 40px;
+  right: 40px;
+}
+
+.main-content .bar_list .overlay {
+  position: absolute;
+  background: black;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
 }
