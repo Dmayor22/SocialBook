@@ -119,7 +119,7 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -193,7 +193,6 @@ header {
 
 .notification_list .calendars {
   display: flex;
-  border: 2px solid red;
   gap: 15px;
   align-items: center;
 }
@@ -202,9 +201,26 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  align-items: center;
-  justify-content: space-between;
   flex-basis: 25%;
+}
+
+.notification_list .calendars .date .date_number {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px 12px 0 0;
+}
+
+.notification_list .calendars .date .month_number {
+  background: #1876f2;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  font-weight: 600;
 }
 
 .notification_list .calendars .notification_tasks h3 {
@@ -214,11 +230,11 @@ header {
 
 .notification_list .calendars .notification_tasks p {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 5px;
   color: #626262;
-  margin: 5px 0;
+  margin: 6px 0;
+  opacity: 0.6;
 }
 
 .notification_list .calendars .notification_tasks p img {
@@ -231,27 +247,46 @@ header {
   font-weight: 600;
 }
 
-.notification_list .calendars .date .date_number {
-  text-align: center;
+.advert {
   margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: 600;
 }
 
-.notification_list .calendars .date .month_number {
-  background: #1876f2;
-  color: #fff;
-  border-radius: 0 0 10px 10px;
-  padding: 10px;
-  text-align: center;
+.advert #close_advert {
+  color: #626262;
+}
+
+.right-sidebar .advert_img {
   width: 100%;
-  font-weight: 600;
 }
 
+.conversation {
+  margin-top: 20px;
+}
+
+.conversation ul {
+  list-style: none;
+}
+
+.conversation ul .conversation_list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.conversation ul .conversation_list a {
+  text-decoration: none;
+  color: #626262;
+}
+
+.conversation ul .conversation_list img {
+  border-radius: 50%;
+  width: 40px;
+}
+/* MAIN CONTENT */
 .container .main-content {
   border: 2px solid red;
   height: 400px;
-  background: #cbdffa;
   flex-basis: 47%;
   position: sticky;
   top: 70px;
