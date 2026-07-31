@@ -301,40 +301,15 @@ header {
 
 /* MAIN CONTENT */
 .container .main-content {
-  height: 400px;
+  height: 100vh;
   flex-basis: 47%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
 }
 
-.main-content .status_bar {
+.status_story {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.status_bar .bar_list img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.main-content .status_bar .status_upload {
-  position: relative;
-}
-
-.main-content .bar_list #upload {
-  position: absolute;
-  width: 40px;
-  bottom: 40px;
-  right: 40px;
-}
-
-.main-content .bar_list .overlay {
-  position: absolute;
-  background: black;
-  opacity: 0.2;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
