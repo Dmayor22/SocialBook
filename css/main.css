@@ -343,6 +343,7 @@ header {
   background-position: center;
   background-size: cover;
 }
+
 .story_four {
   background-image:
     linear-gradient(transparent, rgba(0, 0, 0, 0.7)),
@@ -350,6 +351,7 @@ header {
   background-position: center;
   background-size: cover;
 }
+
 .story_five {
   background-image:
     linear-gradient(transparent, rgba(0, 0, 0, 0.7)),
@@ -385,4 +387,33 @@ header {
   color: #fff;
   font-size: 18px;
   opacity: 0.7;
+}
+
+.user_post {
+  background: #fff;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 20px;
+  gap: 15px;
+}
+
+.user_post > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user_post .post_status {
+border: 2PX solid;
+width: 100%;
+}
+
+.user_post .post_status .status_post_icons{
+  display: flex;
+}
+
+.user_post .post_status .status_post_icons .post_icons{
+  display: flex;
 }
