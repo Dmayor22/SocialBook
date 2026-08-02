@@ -410,13 +410,13 @@ header {
   border-radius: 50%;
 }
 
-.user_post_profile_details h3 {
+.user_post_profile_details .post_status h3 {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 1px;
 }
 
-.user_post .post_status p {
+.user_post_profile_details .post_status p {
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -455,4 +455,46 @@ header {
 
 .user_post .user_post_status .status_post_icons .post_icons p {
   font-weight: 600;
+}
+
+.news_feed {
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+}
+
+.news_feed_profile_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.news_feed_profile_details_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.news_feed_profile_details_left > img  {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.news_feed_profile_details > img {
+    width: 30px;
+}
+.news_feed_profile_details h3 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.news_feed_profile_details p {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
