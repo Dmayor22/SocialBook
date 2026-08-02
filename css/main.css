@@ -391,61 +391,68 @@ header {
 
 .user_post {
   background: #fff;
-  display: flex;
   margin-bottom: 20px;
   border-radius: 6px;
   padding: 20px;
-  gap: 15px;
   color: #626262;
 }
 
-.user_post > img {
+.user_post_profile_details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.user_post_profile_details > img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
-.user_post .post_status {
-  width: 100%;
-}
-
-.user_post .post_status h3 {
+.user_post_profile_details h3 {
   font-weight: 700;
   font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .user_post .post_status p {
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.user_post .post_status form {
-  margin: 10px 0;
+.user_post_status {
+  margin: 10px 0 0px 50px;
 }
 
-.user_post .post_status form > textarea {
+.user_post .user_post_status form {
+  margin-bottom: 10px;
+}
+
+.user_post .user_post_status form > textarea {
   border: 1px solid;
   outline: none;
   width: 100%;
+  font-size: 1rem;
 }
 
-.user_post .post_status .status_post_icons {
+.user_post .user_post_status .status_post_icons {
   display: flex;
   gap: 20px;
   width: 100%;
 }
 
-.user_post .post_status .status_post_icons img {
+.user_post .user_post_status .status_post_icons img {
   width: 20px;
 }
 
-.user_post .post_status .status_post_icons .post_icons {
+.user_post .user_post_status .status_post_icons .post_icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
-.user_post .post_status .status_post_icons .post_icons p {
+.user_post .user_post_status .status_post_icons .post_icons p {
   font-weight: 600;
 }

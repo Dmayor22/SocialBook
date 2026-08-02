@@ -112,7 +112,7 @@
       </div>
 
       <!-- main content of the page -->
-      <div class="main-content">
+      <section class="main-content">
         <div class="status_story">
           <div class="story">
             <img src="./images/upload.png" alt="" id="upload" />
@@ -147,17 +147,21 @@
         <!--  user status Post -->
         <div class="user_post">
           <!-- user profile left side  -->
-          <img src="./images/profile-pic.png" alt="" />
+          <div class="user_post_profile_details">
+            <img src="./images/profile-pic.png" alt="" />
 
-          <!-- user post right side -->
-          <div class="post_status">
-            <h3>John Nicholson</h3>
-            <p>Pubic</p>
+            <div class="post_status">
+              <h3>John Nicholson</h3>
+              <p>Pubic</p>
+            </div>
+          </div>
 
+          <div class="user_post_status">
             <form>
               <textarea rows="10">What's on your mind</textarea>
             </form>
 
+            <!-- status iocns -->
             <div class="status_post_icons">
               <div class="post_icons">
                 <img src="./images/live-video.png" alt="" />
@@ -174,7 +178,10 @@
             </div>
           </div>
         </div>
-      </div>
+
+        <!-- News Feed -->
+        <div class="news_feed"></div>
+      </section>
 
       <!-- right side content of the page -->
       <div class="right-sidebar">
