@@ -470,6 +470,8 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .news_feed_profile_details_left {
@@ -479,14 +481,14 @@ header {
   gap: 10px;
 }
 
-.news_feed_profile_details_left > img  {
+.news_feed_profile_details_left > img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
 .news_feed_profile_details > img {
-    width: 30px;
+  width: 30px;
 }
 .news_feed_profile_details h3 {
   font-weight: 700;
@@ -497,4 +499,21 @@ header {
 .news_feed_profile_details p {
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.newsfeed_details > img {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.newsfeed_details p {
+  font-size: 1.1rem;
+}
+
+.newsfeed_details p > span {
+  font-weight: 900;
+}
+
+.newsfeed_details p .blue {
+  color: #1876f2;
 }
