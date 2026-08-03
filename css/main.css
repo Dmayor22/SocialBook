@@ -432,15 +432,15 @@ header {
   margin: 10px 0 0px 50px;
 }
 
-.user_post .user_post_status form {
-  margin-bottom: 10px;
-}
-
-.user_post .user_post_status form > textarea {
-  border: 1px solid;
+.user_post .user_post_status textarea {
+  border: 0;
   outline: none;
   width: 100%;
   font-size: 1rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  resize: none;
 }
 
 .user_post .user_post_status .status_post_icons {
@@ -506,19 +506,26 @@ header {
 .news_feed_profile_details p {
   font-weight: 700;
   letter-spacing: 1px;
+  color: #9a9a9a;
 }
 
 .newsfeed_details > img {
   width: 100%;
   margin-top: 8px;
+  border-radius: 4px;
 }
 
 .newsfeed_details p {
-  font-size: 1.1rem;
+  font-size: 20px;
+  color: #9a9a9a;
 }
 
 .newsfeed_details p > span {
   font-weight: 900;
+}
+
+.newsfeed_details p > a {
+  text-decoration: none;
 }
 
 .newsfeed_details p .blue {
