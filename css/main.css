@@ -395,6 +395,7 @@ header {
   border-radius: 6px;
   padding: 20px;
   color: #626262;
+  width: 100%;
 }
 
 .user_post_profile_details {
@@ -414,6 +415,12 @@ header {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+.post_status_details {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .user_post_profile_details .post_status p {
@@ -539,9 +546,18 @@ header {
   margin-top: 5px;
 }
 
-.social_cta > img {
+.social_cta .social_icons_right > img {
   width: 30px;
   border-radius: 50%;
+  cursor: pointer;
+}
+.social_cta .social_icons_right > .arrow_down {
+  width: 25px;
+}
+
+.social_icons_right {
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
