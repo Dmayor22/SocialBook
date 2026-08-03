@@ -517,3 +517,53 @@ header {
 .newsfeed_details p .blue {
   color: #1876f2;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+.cta_loadmore {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.social_cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.social_cta > img {
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social_cta .social_icons_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.social_cta .social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.social_cta .social_icons > img {
+  width: 20px;
+}
+
+.social_cta .social_icons p {
+  padding-top: 3px;
+}
