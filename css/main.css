@@ -403,7 +403,6 @@ header {
 
 .user_post_profile_details > img {
   width: 40px;
-  height: 40px;
   border-radius: 50%;
 }
 
@@ -595,11 +594,75 @@ header {
   position: absolute;
   width: 90%;
   max-width: 350px;
-  height: 500px;
+  height: 430px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   overflow: hidden;
   top: 70px;
   right: 5%;
+}
+
+.dropdown_user_profile {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.margin {
+  border-bottom: 1px solid #626262;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.dropdown_user_profile img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.dropdown_user_profile a {
+  color: #1876f2;
+  text-decoration: none;
+}
+
+.dropdown_user_profile p {
+  color: #626262;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dropdown_user_profile_link {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown_user_profile_link a > img {
+  width: 10px;
+}
+
+.dropdown_details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown_details a {
+  color: #626262;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.dropdown_details > img {
+  border-radius: 50%;
+  width: 40px;
 }
