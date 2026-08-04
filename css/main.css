@@ -494,8 +494,8 @@ header {
   border-radius: 50%;
 }
 
-.news_feed_profile_details > img {
-  width: 30px;
+.news_feed_profile_details > a img {
+  width: 20px;
 }
 .news_feed_profile_details h3 {
   font-weight: 700;
@@ -520,8 +520,8 @@ header {
   color: #9a9a9a;
 }
 
-.newsfeed_details p > span {
-  font-weight: 900;
+.newsfeed_details p > a span {
+  font-weight: 600;
 }
 
 .newsfeed_details p > a {
@@ -530,20 +530,6 @@ header {
 
 .newsfeed_details p .blue {
   color: #1876f2;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 1rem;
-}
-
-.cta_loadmore {
-  cursor: pointer;
-  padding: 10px;
 }
 
 .social_cta {
@@ -589,4 +575,18 @@ header {
 
 .social_cta .social_icons p {
   padding-top: 3px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+.cta_loadmore {
+  cursor: pointer;
+  padding: 10px;
 }
