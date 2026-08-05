@@ -401,11 +401,6 @@ header {
   gap: 10px;
 }
 
-.user_post_profile_details > img {
-  width: 40px;
-  border-radius: 50%;
-}
-
 .user_post_profile_details .post_status h3 {
   font-weight: 700;
   font-size: 20px;
@@ -624,7 +619,9 @@ header {
   margin: 0 auto;
 }
 
-.dropdown_user_profile img, .dropdown_details > img {
+.dropdown_user_profile img,
+.dropdown_details > img,
+.user_post_profile_details > img {
   border-radius: 50%;
   width: 40px;
 }
