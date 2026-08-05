@@ -591,6 +591,7 @@ header {
 }
 
 .dropdown_menu {
+  display: none;
   position: absolute;
   width: 90%;
   max-width: 350px;
@@ -601,6 +602,10 @@ header {
   overflow: hidden;
   top: 70px;
   right: 5%;
+}
+
+.dropdown_menu.click {
+  display: block;
 }
 
 .dropdown_user_profile {
