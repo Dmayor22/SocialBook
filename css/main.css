@@ -586,7 +586,6 @@ header {
 }
 
 .dropdown_menu {
-  display: none;
   position: absolute;
   width: 90%;
   max-width: 350px;
@@ -597,10 +596,16 @@ header {
   overflow: hidden;
   top: 70px;
   right: 5%;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
 }
 
 .dropdown_menu.click {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown_user_profile {
