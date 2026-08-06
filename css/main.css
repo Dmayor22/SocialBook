@@ -22,6 +22,7 @@ header {
 
 .logo {
   width: 170px;
+  cursor: pointer;
 }
 
 .navigation_icon {
@@ -679,6 +680,9 @@ header {
   padding: 2px 3px;
   cursor: pointer;
   display: flex;
+  transition:
+    padding-left 0.5s ease,
+    background 0.5s ease;
 }
 
 #dark_mode_toogle > span {
@@ -694,7 +698,15 @@ header {
   padding-left: 23px;
 }
 
+/* darkmode utilities */
 body.dark {
-  background: #000;
+  background: #0a0a0a;
   color: #626262;
+  transition: background 0.5s ease;
+}
+header.dark,
+.news_feed.dark,
+.user_post.dark,
+.right-sidebar.dark {
+  background-color: #000;
 }
