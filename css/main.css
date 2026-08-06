@@ -668,3 +668,33 @@ header {
   text-decoration: none;
   font-size: 1.1rem;
 }
+
+#dark_mode_toogle {
+  position: absolute;
+  width: 45px;
+  background: #ccc;
+  top: 20px;
+  right: 20px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  display: flex;
+}
+
+#dark_mode_toogle > span {
+  background: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#dark_mode_toogle.dark_btn_on {
+  background: #000;
+  padding-left: 23px;
+}
+
+body.dark {
+  background: #000;
+  color: #626262;
+}
