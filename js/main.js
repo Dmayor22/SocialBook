@@ -14,67 +14,37 @@ menuBtn.addEventListener("click", () => {
   menuDropdown.classList.toggle("click");
 });
 
-// handles the darkmode and light mode
-darkModeBtn.addEventListener("click", () => {
-  darkModeBtn.classList.toggle("dark_btn_on");
-  body.classList.toggle("dark");
-  header.classList.toggle("dark");
+// Elements that should receive the dark class
+const darkElements = [body, header, userPost, rightSide, menuDropdown];
 
-  // array
+// Function to apply theme
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+
+  darkModeBtn.classList.toggle("dark_btn_on", isDark);
+
+  darkElements.forEach((element) => {
+    element.classList.toggle("dark", isDark);
+  });
+
   newsFeed.forEach((newsfeed) => {
-    newsfeed.classList.toggle("dark");
-  });
-  userPost.classList.toggle("dark");
-  rightSide.classList.toggle("dark");
-  menuDropdown.classList.toggle("dark");
-
-  // array
-  dropdownUserProfile.forEach((userProfile) => {
-    userProfile.classList.toggle("dark");
+    newsfeed.classList.toggle("dark", isDark);
   });
 
-  // update localstorage
-  if (localStorage.getItem("theme") == "light") {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-});
-
-// save dark mode preference to local storage
-if (localStorage.getItem("theme") == "light") {
-  darkModeBtn.classList.remove("dark_btn_on");
-  body.classList.remove("dark");
-  header.classList.remove("dark");
-
-  // array
-  newsFeed.forEach((newsfeed) => {
-    newsfeed.classList.remove("dark");
+  dropdownUserProfile.forEach((profile) => {
+    profile.classList.toggle("dark", isDark);
   });
-  userPost.classList.remove("dark");
-  rightSide.classList.remove("dark");
-  menuDropdown.classList.remove("dark");
 
-  // array
-  dropdownUserProfile.forEach((userProfile) => {
-    userProfile.classList.remove("dark");
-  });
-} else if (localStorage.getItem("theme") == "dark") {
-  darkModeBtn.classList.add("dark_btn_on");
-  body.classList.add("dark");
-  header.classList.add("dark");
-  // array
-  newsFeed.forEach((newsfeed) => {
-    newsfeed.classList.add("dark");
-  });
-  userPost.classList.add("dark");
-  rightSide.classList.add("dark");
-  menuDropdown.classList.add("dark");
-
-  // array
-  dropdownUserProfile.forEach((userProfile) => {
-    userProfile.classList.add("dark");
-  });
-} else {
-  localStorage.setItem("theme", "light");
+  localStorage.setItem("theme", theme);
 }
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme") || "light";
+applyTheme(savedTheme);
+
+// Toggle theme
+darkModeBtn.addEventListener("click", () => {
+  const newTheme = localStorage.getItem("theme") === "dark" ? "light" : "dark";
+
+  applyTheme(newTheme);
+});
