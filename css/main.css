@@ -694,7 +694,7 @@ header {
 }
 
 #dark_mode_toogle.dark_btn_on {
-  background: #000;
+  background: #0a0a0a;
   padding-left: 23px;
 }
 
@@ -707,6 +707,8 @@ body.dark {
 header.dark,
 .news_feed.dark,
 .user_post.dark,
-.right-sidebar.dark {
+.right-sidebar.dark,
+.dropdown_menu.dark,
+.dropdown_user_profile.dark {
   background-color: #000;
 }
