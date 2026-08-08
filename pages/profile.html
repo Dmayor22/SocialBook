@@ -4,10 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
+    <header>
+      <!-- nav icons -->
+      <nav class="navigation_icon">
+        <img src="../images/logo.png" alt="socialBook logo" class="logo" />
 
+        <div class="icons">
+          <img src="../images/notification.png" alt="notification" />
+          <img src="../images/inbox.png" alt="email" />
+          <img src="../images/video.png" alt="" />
+        </div>
+      </nav>
 
+      <!-- search and profile -->
+      <div class="user">
+        <div class="search-box">
+          <img src="../images/search.png" alt="" />
+          <input type="search" class="search" placeholder="Search" />
+        </div>
+
+        <div class="profile_click">
+          <img src="../images/profile-pic.png" alt="" id="user_img" />
+          <div class="status"></div>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <!-- toggle btn -->
+        <div id="dark_mode_toogle">
+          <span></span>
+        </div>
+
+        <!-- user profile -->
+        <div class="dropdown_user_profile">
+          <img src="../images/profile-pic.png" alt="" />
+
+          <div>
+            <p>John Nicholson</p>
+            <a href="#">See your Profile</a>
+          </div>
+        </div>
+
+        <div class="margin"></div>
+
+        <!-- feedback -->
+        <div class="dropdown_user_profile">
+          <img src="../images/feedback.png" alt="" />
+
+          <div>
+            <p>Give Feedback</p>
+            <a href="#">Help us to improve the new design</a>
+          </div>
+        </div>
+        <div class="margin"></div>
+
+        <!-- Settings -->
+        <div class="dropdown_user_profile_link">
+          <div class="dropdown_details">
+            <img src="../images/setting.png" alt="" />
+            <a href="#">Settings & Privacy </a>
+          </div>
+
+          <a href="#"><img src="../images/arrow.png" alt="" /></a>
+        </div>
+
+        <!-- help -->
+        <div class="dropdown_user_profile_link">
+          <div class="dropdown_details">
+            <img src="../images/help.png" alt="" />
+            <a href="#">Help & Support </a>
+          </div>
+
+          <a href="#"><img src="../images/arrow.png" alt="" /></a>
+        </div>
+
+        <!-- display -->
+        <div class="dropdown_user_profile_link">
+          <div class="dropdown_details">
+            <img src="../images/display.png" alt="" />
+            <a href="#">Display & Accessibility </a>
+          </div>
+
+          <a href="#"><img src="../images/arrow.png" alt="" /></a>
+        </div>
+
+        <!-- Logout -->
+        <div class="dropdown_user_profile_link">
+          <div class="dropdown_details">
+            <img src="../images/logout.png" alt="" />
+            <a href="#">Logout</a>
+          </div>
+
+          <a href="#"><img src="../images/arrow.png" alt="" /></a>
+        </div>
+      </div>
+    </header>
+
+    <script src="../js/profile.js"></script>
   </body>
 </html>
-
