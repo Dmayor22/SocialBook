@@ -7,6 +7,7 @@ const newsFeed = document.querySelectorAll(".news_feed");
 const userPost = document.querySelector(".user_post");
 const rightSide = document.querySelector(".right-sidebar");
 const darkModeBtn = document.querySelector("#dark_mode_toogle");
+const profileInfo = document.querySelector(".profile_info");
 const dropdownUserProfile = document.querySelectorAll(".dropdown_user_profile");
 
 // handles menu items when the user profile is clicked
@@ -18,7 +19,7 @@ menuBtn.addEventListener("click", () => {
 // userPost
 // rightSide
 // menuDropdown
-const darkElements = [body, header];
+const darkElements = [body, header, profileInfo];
 
 // Function to apply theme
 function applyTheme(theme) {

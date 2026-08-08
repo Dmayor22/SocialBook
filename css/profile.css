@@ -21,6 +21,7 @@ body {
   margin-top: 10px;
   padding: 15px;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .profile_info_leftside {
@@ -55,7 +56,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .profile_info_righttside_details .profile_btns {
@@ -63,15 +64,47 @@ body {
   gap: 10px;
 }
 
+.profile_btns #add_friends,
+.profile_btns #msg {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
 .profile_btns #add_friends {
-  background: #6a6a6a;
-  padding: 5px 15px;
+  background: #6c6c6c;
 }
 
-.profile_btns #add_friends > img {
+.btn_details > img {
   width: 20px;
+}
+
+.btn_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .profile_btns #msg {
   background: #1876f2;
+  color: #fff;
+}
+
+.profile_info_righttside_details button {
+  align-self: end;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.profile_info_righttside_details button > img {
+  width: 25px;
+}
+
+
+
+/* dark mode */
+.profile_info.dark {
+  background-color: #000;
 }
