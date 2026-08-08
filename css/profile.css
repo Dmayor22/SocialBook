@@ -1,3 +1,7 @@
+body {
+  color: #6c6c6c;
+}
+
 .profile_container {
   margin: 10px auto;
   /* height: 100vh; */
@@ -8,4 +12,66 @@
   width: 100%;
 }
 
+.profile_info {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 15px;
+  overflow: hidden;
+}
 
+.profile_info_leftside {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile_info_leftside > img {
+  width: 20%;
+}
+
+.profile_info_leftside_info > img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.profile_info_leftside_info > h3 {
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+  font-weight: 900;
+}
+
+.profile_info_leftside_info > p {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.profile_info_righttside_details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile_info_righttside_details .profile_btns {
+  display: flex;
+  gap: 10px;
+}
+
+.profile_btns #add_friends {
+  background: #6a6a6a;
+  padding: 5px 15px;
+}
+
+.profile_btns #add_friends > img {
+  width: 20px;
+}
+
+.profile_btns #msg {
+  background: #1876f2;
+}
