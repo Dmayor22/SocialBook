@@ -4,7 +4,6 @@ body {
 
 .profile_container {
   margin: 10px auto;
-  /* height: 100vh; */
   width: 70%;
 }
 
@@ -37,6 +36,7 @@ body {
 .profile_info_leftside_info > img {
   width: 30px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .profile_info_leftside_info > h3 {
@@ -102,9 +102,29 @@ body {
   width: 25px;
 }
 
-
-
 /* dark mode */
 .profile_info.dark {
   background-color: #000;
+}
+
+/* content */
+.profile_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 2px solid;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.profile_content .content_leftside {
+  flex-basis: 35%;
+  align-self: flex-start;
+  border: 2px solid red;
+}
+
+.profile_content .content_rightside {
+  flex-basis: 63%;
+  align-self: flex-start;
+  border: 2px solid red;
 }
