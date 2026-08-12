@@ -9,6 +9,8 @@ const rightSide = document.querySelector(".right-sidebar");
 const darkModeBtn = document.querySelector("#dark_mode_toogle");
 const profileInfo = document.querySelector(".profile_info");
 const dropdownUserProfile = document.querySelectorAll(".dropdown_user_profile");
+const galleryContent = document.querySelectorAll(".content_gallery");
+const contentLeftside = document.querySelector(".content_leftside");
 
 // handles menu items when the user profile is clicked
 menuBtn.addEventListener("click", () => {
@@ -16,10 +18,17 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Elements that should receive the dark class
-// userPost
+//
 // rightSide
-// menuDropdown
-const darkElements = [body, header, profileInfo];
+//
+const darkElements = [
+  body,
+  header,
+  profileInfo,
+  contentLeftside,
+  userPost,
+  menuDropdown,
+];
 
 // Function to apply theme
 function applyTheme(theme) {
@@ -37,6 +46,10 @@ function applyTheme(theme) {
 
   dropdownUserProfile.forEach((profile) => {
     profile.classList.toggle("dark", isDark);
+  });
+
+  galleryContent.forEach((gallery) => {
+    gallery.classList.toggle("dark", isDark);
   });
 
   localStorage.setItem("theme", theme);

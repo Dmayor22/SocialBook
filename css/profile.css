@@ -102,11 +102,6 @@ body {
   width: 25px;
 }
 
-/* dark mode */
-.profile_info.dark {
-  background-color: #000;
-}
-
 /* content */
 .profile_content {
   display: flex;
@@ -228,4 +223,12 @@ body {
 .profile_content .content_rightside {
   flex-basis: 63%;
   align-self: flex-start;
+}
+
+/* dark mode */
+.profile_info.dark,
+.content_gallery.dark,
+.content_leftside.dark,
+.userPost.dark {
+  background-color: #000;
 }
