@@ -20,16 +20,17 @@ header {
   z-index: 100;
 }
 
-.logo {
-  width: 170px;
-  cursor: pointer;
-}
-
 .navigation_icon {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 70px;
+}
+
+.logo {
+  width: 170px;
+  cursor: pointer;
+  vertical-align: middle;
 }
 
 .icons {
@@ -711,4 +712,37 @@ header.dark,
 .dropdown_menu.dark,
 .dropdown_user_profile.dark {
   background-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .left-sidebar,
+  .right-sidebar {
+    display: none;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .icons > img {
+    width: 20px;
+  }
+
+  #user_img {
+    width: 40px;
+  }
+
+  .container {
+    display: block;
+    padding: 10px 20px;
+  }
 }
