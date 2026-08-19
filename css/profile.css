@@ -5,10 +5,12 @@ body {
 .profile_container {
   margin: 10px auto;
   width: 70%;
+  color: #626262;
 }
 
 .cover {
   width: 100%;
+  border-radius: 6px;
 }
 
 .profile_info {
