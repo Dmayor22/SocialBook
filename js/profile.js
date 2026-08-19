@@ -17,10 +17,7 @@ menuBtn.addEventListener("click", () => {
   menuDropdown.classList.toggle("click");
 });
 
-// Elements that should receive the dark class
-//
-// rightSide
-//
+
 const darkElements = [
   body,
   header,
